@@ -3,13 +3,20 @@ public class q04 {
 
         int a = 12;
         int b = 18;
-        int lcm = 1;
+        int lcm;
 
-        for (int i = 1; i <= a && i <= b; i++) {
-            if (a % i == 0 && b % i == 0) {
-                lcm = i;
-            }
+        if (a > b)
+            lcm = a;
+        else
+            lcm = b;
+
+        while (true) {
+            if (lcm % a == 0 && lcm % b == 0)
+                break;
+
+            lcm++;
         }
+
         System.out.println("LCM = " + lcm);
     }
 }
