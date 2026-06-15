@@ -7,3 +7,4 @@ public class q01 {
         }
         System.out.println(sum);
     }}
+    
